@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Aktuelle Fotos</title>
+		<meta author="Linus Warnatz" />
+		<link rel="stylesheet" href="../style.css" type="text/css" />
+		<link rel="stylesheet" href="../bar.css" type="text/css" />
+	</head>
+	<body>
+			<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="../search.html">Suche</a>
+  <a href="../Hello_World/index.html">Videos &amp; Co.</a>
+  <!-- <a href="#">Geocaching</a> -->
+  <a href="index.html">> Fotoalbum</a>
+  <a href="../scratch.html">Scratch-Projekte</a>
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <!-- Open -->menu</span>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+		<h1>Fotoalbum - Foto 1</h1>
+		<img src="1.jpg" width="600" height="400" alt="img1"/>
+		<img src="map.jpg" alt="navigation area" usemap="#nav" width="400" height="300"/>
+		<map name="nav">
+			<area shape="rect" coords="200,0,400,100" href="2.html">
+			<area shape="rect" coords="0,200,200,300" href="3.html">
+			<area shape="rect" coords="200,100,400,300" href="4.html">
+		</map>
+	</body>
+</html>

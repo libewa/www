@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<title>Meine erste Seite</title>
+		<meta charset="utf-8">
+		<meta author="Linus Benjamin Warnatz">
+		<link rel="stylesheet" href="../style.css" type="text/css" />
+		<link rel="stylesheet" href="../bar.css" type="text/css" />
+	</head>
+	<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="../search.html">Suche</a>
+  <a href="#">> Videos &amp; Co.</a>
+  <!-- <a href="#">Geocaching</a> -->
+  <a href="../photos/index.html">Fotoalbum</a>
+  <a href="../scratch.html">Scratch-Projekte</a>
+</div>
+
+<div id="main">
+  <span id="bar" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <!-- Open -->menu</span>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+
+
+		<h1>Meine erste Website</h1>
+		<link rel="sidebar" href="../bar.html" type="text.html" />
+		<i><a href="https://www.elgoog.im">Hier</a></i> geht es <strong>nicht</strong> zu Google!<sup>Sondern zu elgooG</sup> &#128514
+		<i><a href="https://www.noza.ma">Hier</a></i> geht es <strong>nicht</strong> zu Amazon!<sup>Sondern zu noza.mA</sup> &#128514
+		<blockquote cite="Friedrich Schiller">Sagen sie ihm, er könne mich im Arsche lecken!</blockquote>
+		<i>Friedrich Schiller</i>
+		<h2>Besucherzähler</h2>
+		<!--  1581861079 pwd:   -->
+		<a href="http://www.andyhoppe.com/" title="Besucherzähler"><img 
+src="//c.andyhoppe.com/1581861079" style="border:none" alt="Besucherzähler" /></a>
+<!--		<h2>Account erstellen</h2>
+		<form action="mailto:##mail##?subject=Kontakt erstellt!" method="post" enctype="text/plain" method="post" id="createAccount">
+			<fieldset>
+				<legend>Informationen</legend>
+				Benutzername: <input type="text" name="name" required/>
+				E-Mail-Adresse: <input type="email" name="mail" required/>
+				Passwort: <input type="password" name="password" required/>
+			</fieldset>
+			<fieldset>
+				<legend>Wie alt sind sie?</legend>
+				<input type="radio" name="age" value="u14"/> unter 14 Jahre
+				<input type="radio" name="age" value="u18"/> zwischen 14 und 18 Jahre
+				<input type="radio" name="age" value="ü18" /> über 18 Jahre
+			</fieldset>
+			<input type="checkbox" name="becomeNewsletter" value="true" checked="checked" /> Newsletter erhalten<br />
+			<input type="submit" name="register" value="Registrieren" />
+		</form>
+		<h2>Einloggen</h2>
+		<form action="Hello_World.html" method="post" id="login">
+			Benutzername: <input type="text" name="loggedInUsername" /> oder E-Mail-Adresse: <input type="text" name="loggedInUserMailAdress" /><br />
+			Passwort: <input type="password" name="loggedInUserPassword" />
+			<input type="submit" name="login" value="Einloggen"/>
+		</form> -->
+		
+		<h2>Videos</h2>
+		<h3>HOW NOT TO LAND AN ORBITAL BOOSTER</h3>
+		<h4>Boosterlandungen von SpaceX -- die Guten und die Schlechten</h3>
+			<iframe width="700" height="400" src="https://www.youtube.com/embed/bvim4rsNHkQ?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p id="src">Quelle: <a href="https://www.youtube.com/watch?v=bvim4rsNHkQ">YouTube, SpaceX</a></p>
+		<h3>All is found — Die Eiskönigin II</h3>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/CyDh3_b1j9c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<p id="src">Quelle: <a href="https://www.youtube.com/watch?v=CyDh3_b1j9c">YouTube, DisneyMusicVEVO</a></p>
+		<h3>Wise Guys — Deutsche Bahn</h3>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/wXjhszy2f9w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<p id="src">Quelle: <a href="https://www.youtube.com/watch?v=wXjhszy2f9w">YouTube, Wise Guys</a></p>
+</html>

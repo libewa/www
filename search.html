@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Linus Suchmaschine</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="suche.css">
+	<link rel="stylesheet" href="bar.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta author="Michael Warnatz,Linus Warnatz">
+</head>
+<body>
+		<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">> Suche</a>
+  <a href="Hello_World/index.html">Videos &amp; Co.</a>
+  <!-- <a href="#">Geocaching</a> -->
+  <a href="photos/index.html">Fotoalbum</a>
+  <a href="scratch.html">Scratch-Projekte</a>
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <!-- Open -->menu</span>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+    <h1>Linus Internetsuche</h1>
+    Diese Suche verwendet als Suchmaschine die <a href="https://www.blinde-kuh.de">Blinde Kuh</a>
+    <form action="//www.blinde-kuh.de/bksearch.cgi"
+    target="_blank" method="POST" >
+    <input type="text" name="query" value="" maxlength="64" 
+    accept-charset="ISO-8859-1" autocomplete="off" />
+    <input type="submit" value="Suchen" />
+    <input type="hidden" name="input" value="externe searchbox">
+    </form>
+</body>
+</html>

@@ -1,0 +1,10 @@
+body {
+	font-family: sans-serif;
+	background-color: rgb(#00E7FF);}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Arial', 'Calibri'
+}
+#src {
+	font-family: monospace;
+	font-size: 8px;
+}
